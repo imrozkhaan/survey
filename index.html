@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Survey App</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="card">
+      <h1>🧠 AI Survey Generator</h1>
+      
+      <input type="text" id="topic-input" placeholder="Enter a topic (e.g. education, AI)">
+      <button onclick="generateQuestion()">Generate Question</button>
+      
+      <p class="question" id="question">Survey question will appear here.</p>
+
+      <textarea id="user-input" placeholder="Type your answer..."></textarea>
+      <button onclick="submitAnswer()">Submit Answer</button>
+
+      <div id="ai-response" class="ai-response hidden"></div>
+    </div>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
